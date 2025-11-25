@@ -20,6 +20,7 @@ git commit -m "Configure Git LFS and migrate large files"
 git push origin <branch> --force
 # or
 git push origin main
+```
 
  Git LFS Workflow (Linux)
 
@@ -41,6 +42,7 @@ git push origin <branch> --force
 git push origin main
 
  Git LFS Workflow (macOS)
+ ```
 
 ```bash
 git init
@@ -58,6 +60,7 @@ git commit -m "Configure Git LFS and migrate large files"
 git push origin <branch> --force
 # or
 git push origin main
+```
 
 PULL WITH LFS
 
@@ -70,6 +73,7 @@ git lfs pull
 git pull
 git lfs pull
 git lfs ls-files
+```
 
 # Git LFS Pull Workflow (Linux)
 
@@ -80,6 +84,7 @@ git lfs pull
 git pull
 git lfs pull
 git lfs ls-files
+```
 
 # Git LFS Pull Workflow (macOS)
 
@@ -90,3 +95,4 @@ git lfs pull
 git pull
 git lfs pull
 git lfs ls-files
+```

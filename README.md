@@ -2,17 +2,62 @@
 
 PUSH WITH LFS
 
-Window:
+🚀 Git LFS Workflow (Windows)
+
+```bash
 git init
 git lfs install
-git lfs track "<file wanna upload>" -> for this use *.mp4 or *.onnx (if we planned to use onnx to upload the model)
-or even git lfs track "*.extension" if too big?, like put the "too big single file out first"
+git lfs track "*.mp4"
+git lfs track "*.onnx"
+git lfs track "*.zip"
+git lfs track "<file_name>"
 git rm --cached largefile.mp4
+git lfs migrate import --include="frames.zip" --include-ref=refs/heads/main
+git lfs ls-files
+git ls-tree -r HEAD | grep <file_name>
 git add .gitattributes
-git commit -m "<a command here>" -> based on the person who push
-git push or git push origin main
+git commit -m "Configure Git LFS and migrate large files"
+git push origin <branch> --force
+# or
+git push origin main
 
+# Git LFS Workflow (Linux)
 
+```bash
+git init
+git lfs install
+git lfs track "*.mp4"
+git lfs track "*.onnx"
+git lfs track "*.zip"
+git lfs track "<file_name>"
+git rm --cached largefile.mp4
+git lfs migrate import --include="frames.zip" --include-ref=refs/heads/main
+git lfs ls-files
+git ls-tree -r HEAD | grep <file_name>
+git add .gitattributes
+git commit -m "Configure Git LFS and migrate large files"
+git push origin <branch> --force
+# or
+git push origin main
+
+# Git LFS Workflow (macOS)
+
+```bash
+git init
+git lfs install
+git lfs track "*.mp4"
+git lfs track "*.onnx"
+git lfs track "*.zip"
+git lfs track "<file_name>"
+git rm --cached largefile.mp4
+git lfs migrate import --include="frames.zip" --include-ref=refs/heads/main
+git lfs ls-files
+git ls-tree -r HEAD | grep <file_name>
+git add .gitattributes
+git commit -m "Configure Git LFS and migrate large files"
+git push origin <branch> --force
+# or
+git push origin main
 
 PULL WITH LFS
 

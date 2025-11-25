@@ -2,7 +2,7 @@
 
 PUSH WITH LFS
 
-🚀 Git LFS Workflow (Windows)
+ Git LFS Workflow (Windows)
 
 ```bash
 git init
@@ -21,7 +21,7 @@ git push origin <branch> --force
 # or
 git push origin main
 
-# Git LFS Workflow (Linux)
+ Git LFS Workflow (Linux)
 
 ```bash
 git init
@@ -40,7 +40,7 @@ git push origin <branch> --force
 # or
 git push origin main
 
-# Git LFS Workflow (macOS)
+ Git LFS Workflow (macOS)
 
 ```bash
 git init
@@ -61,3 +61,32 @@ git push origin main
 
 PULL WITH LFS
 
+Git LFS Pull Workflow (Windows)
+
+```bash
+git lfs install
+git clone <repo-url>
+git lfs pull
+git pull
+git lfs pull
+git lfs ls-files
+
+# Git LFS Pull Workflow (Linux)
+
+```bash
+git lfs install
+git clone <repo-url>
+git lfs pull
+git pull
+git lfs pull
+git lfs ls-files
+
+# Git LFS Pull Workflow (macOS)
+
+```bash
+git lfs install
+git clone <repo-url>
+git lfs pull
+git pull
+git lfs pull
+git lfs ls-files
